@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <!-- style -->
+    <link rel="stylesheet" href="style/gallery.css" />
+    <!--font logo dancing script google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=New+Amsterdam&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <audio src="propertis/audiosound.mp3" autoplay loop></audio>
+    <!-- navbar -->
+    <nav class="navbar">
+      <div class="logo">
+        <a href="index.html">Aryshv</a>
+      </div>
+      <div class="navlink">
+        <a href="index.html">Home</a>
+        <a href="about.html">About us</a>
+      </div>
+    </nav>
+
+    <!-- content  -->
+    <div class="content"></div>
+
+    <div class="content-paralax">
+      <h1>Most Popular tour</h1>
+      <p>Take a Look at Our</p>
+
+      <div class="card-container">
+        <div class="card">
+          <img src="propertis/bromo.jpg" alt="bromo" />
+          <div class="card-content">
+            <h4>Gunung Bromo</h4>
+            <p>Rp 580.000 - Rp 1.300.000</p>
+            <a href="login.html">Buy Tiket</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="propertis/curug_cikateh.jpg" alt="Curug Cikateh" />
+          <div class="card-content">
+            <h4>Curug Cikateh</h4>
+            <p>Rp 75.000-250.000</p>
+            <a href="login.html">Buy Tiket</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="propertis/pantai.jpg" alt="Pantai" />
+          <div class="card-content">
+            <h4>Pantai Teluk Hijau</h4>
+            <p>Rp 1.405.000-1.700.000</p>
+            <a href="login.html">Buy Tiket</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- content 2 -->
+    <div class="content2">
+      <h1>List Travel</h1>
+      <div class="content2-container">
+        <div class="content2-left">
+          <video src="propertis_gallery/bromo.mp4" autoplay loop></video>
+        </div>
+        <div class="content2-right">
+          <h2>Gunung Bromo</h2>
+          <p>
+            Gunung Bromo terletak di Taman Nasional Bromo Tengger Semeru, Jawa
+            Timur, Indonesia. Akses utama dari Surabaya (bandara Juanda) atau
+            Malang, lalu naik bus atau mobil ke Probolinggo (3-4 jam). Dari
+            sana, lanjut ke Cemoro Lawang (1-2 jam) sebagai pintu masuk utama.
+            Alternatif: naik kereta ke Stasiun Probolinggo. Perjalanan total
+            sekitar 4-6 jam dari Surabaya.
+          </p>
+        </div>
+      </div>
+      <div class="content3-container">
+        <div class="content3-left">
+          <h2>Curug cikateh</h2>
+          <p>
+            Curug Cikateh terletak di Desa Cikateh, Kecamatan Cicalengka,
+            Kabupaten Bandung, Jawa Barat, Indonesia. Tempat ini mudah dijangkau
+            dari Bandung dengan perjalanan sekitar 30-45 menit menggunakan
+            kendaraan pribadi atau angkutan umum. Jalur utama melalui Jalan Raya
+            Bandung-Cicalengka, lalu belok ke arah Desa Cikateh. Parkir tersedia
+            di area sekitar dengan biaya sekitar Rp5.000-Rp10.000 per kendaraan.
+          </p>
+        </div>
+        <div class="content3-right">
+          <video src="propertis_gallery/curug.mp4" autoplay loop></video>
+        </div>
+      </div>
+      <div class="content2-container">
+        <div class="content2-left">
+          <video src="propertis_gallery/pantai.mp4" autoplay loop></video>
+        </div>
+        <div class="content2-right">
+          <h2>Pantai Teluk Hijau</h2>
+          <p>
+            Pantai Teluk Hijau terletak di Desa Pangandaran, Kecamatan
+            Pangandaran, Kabupaten Pangandaran, Jawa Barat, Indonesia. Aksesnya
+            mudah dari Bandung (perjalanan 3-4 jam via tol Cipali) atau Jakarta
+            (5-6 jam). Dari terminal Pangandaran, lanjutkan dengan angkutan
+            lokal atau ojek. Parkir tersedia dengan biaya sekitar
+            Rp5.000-Rp10.000 per kendaraan.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- form section -->
+    <div class="form">
+      <h1>Request Destination</h1>
+      <form id="myForm">
+        <input type="text" id="usernameText" placeholder="Username" />
+        <input
+          type="text"
+          id="destinasiText"
+          placeholder="Masukkan destinasi"
+        />
+        <div class="btnkirim">
+        <button type="submit">Kirim</button>
+        </div>
+      </form>
+      <table id="myTable">
+        <thead>
+          <tr>
+            <th>User Name</th>
+            <th>Desinasi</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <script src="script/table_function.js"></script>
+  </body>
+</html>
